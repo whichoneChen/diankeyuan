@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <Home/>
+    <Header/>
+    <MainBody/>
   </div>
 </template>
 
 <script>
-import Home from "views/Home";
-
+import Header from "./views/component/Header";
+import MainBody from "./views/component/MainBody";
 export default{
   name:'App',
   components:{
+    Header,
     Home,
+    MainBody
   }
 }
 
@@ -18,10 +21,11 @@ export default{
 
 <style lang="scss">
   body{
-    width: 1920px;
-
+    //width: 1920px;
+    margin: 0;
+    padding: 0;
     #app{
-      width: 100%;
+      width: 1920px;
     }
   }
 </style>
