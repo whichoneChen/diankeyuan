@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Header/>
-    <MainBody/>
+    <Home/>
   </div>
 </template>
 
 <script>
+import Home from "./views/Home";
 import Header from "./views/component/Header";
 import MainBody from "./views/component/MainBody";
 export default{

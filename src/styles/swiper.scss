@@ -1,0 +1,40 @@
+
+.caro-arrow{
+  z-index: 10;
+  position: absolute;
+  font-size: 80px;
+  top: 248px;
+  color: #11A3CA;
+  text-decoration: none;
+
+  &:hover{
+    color: #11A3CA;
+  }
+}
+
+.left-arrow{
+  left: 187px;
+}
+
+.right-arrow{
+  right: 193px;
+}
+
+.text-region{
+  position: absolute;
+  z-index: 10;
+  color:#fff;
+  top:177px;
+  left:360px;
+  font-family: "PingFang SC";
+
+  .t-greeting{
+    //font-weight: ;
+    font-size: 74px;
+  }
+
+  .t-date{
+    font-weight: lighter;
+    font-size: 65px;
+  }
+}

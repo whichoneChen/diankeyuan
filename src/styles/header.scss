@@ -1,0 +1,23 @@
+
+.el-header{
+  /*header自带内联高度，只能在内联样式里覆盖，改这里没用*/
+  height: 167px;
+  width: 100%;
+  padding: 40px 291px 11px 357px;
+}
+
+.img-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hl-img{
+  height: 108px;
+  width: 454px;
+}
+
+.hr-img{
+  height: 76px;
+  width: 345px;
+}
