@@ -15,6 +15,9 @@
 
       <NameCard/>
 
+      <ConferenceInfo/>
+
+
     </el-main>
   </el-container>
 </template>
@@ -25,6 +28,8 @@ import MainBody from "./component/MainBody";
 import Menu from "./component/Menu";
 import Carousel from "./component/Carousel";
 import NameCard from "./component/NameCard";
+import ConferenceInfo from "./component/ConferenceInfo";
+
 
 export default {
   name: "Home",
@@ -33,7 +38,8 @@ export default {
     Header,
     MainBody,
     Menu,
-    Carousel
+    Carousel,
+    ConferenceInfo
   },
 
 }
