@@ -30,6 +30,7 @@
       </el-col>
 
       <el-col :span="12" class="right-cards">
+        <!--   日期面板     -->
         <Card>
           <template #title>
             <span>
@@ -45,17 +46,24 @@
               </li>
             </ul>
           </div>
-
-
         </Card>
 
-        <Card>
 
+
+        <!--Tutorials && PANELS面板-->
+        <Card v-for="item in cardInfo">
+          <template #title>
+            <span>{{item.title}}</span>
+          </template>
+          <ul class="card-panel">
+            <li v-for="person in item.persons">
+              <img :src="require('assets/images/'+person.avatar)" alt="avatar">
+              <span class="card-panel-description">{{person.description}}</span>
+            </li>
+          </ul>
         </Card>
 
-        <Card>
 
-        </Card>
 
       </el-col>
     </el-row>
@@ -94,7 +102,44 @@ export default {
           date:'03 Sep. 2021',
           agenda:'Presentation submission'
         },
+      ],
+      cardInfo:[
+        {
+          title:'IMPORTANT TUTORIALS',
+          persons:[
+            {
+              avatar:'smart.png',
+              description:'Smart grid paradigm in facilitating cost effective transition to resilient low carbon energy'
+            },
+            {
+              avatar: 'dev.png',
+              description: 'Developments in Flexible LCC HVDC'
+            },
+            {
+              avatar: 'tech.png',
+              description: 'Techno-economic analysis and optimization of local energy systems'
+            }
+          ]
+        },
+        {
+          title:'IMPORTANT PANELS',
+          persons:[
+            {
+              avatar:'smart.png',
+              description:'Electrical Power Systems and Power Electronic Converter Requirements for Transportation Electrification'
+            },
+            {
+              avatar: 'dev.png',
+              description: 'Multi-Physics Design of High Speed Permanent Magnet Synchronous Machines'
+            },
+            {
+              avatar: 'tech.png',
+              description: 'Edge-Cloud Coordinative Distribution IoT Solution'
+            }
+          ]
+        }
       ]
+
     }
   }
 }
@@ -207,6 +252,26 @@ export default {
     display: block;
     font-size: 16px;
     color: #666;
+  }
+}
+
+.card-panel{
+  list-style: none;
+  padding: 0;
+
+  li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    .card-panel-description{
+      margin-left: 20px;
+      font-size: 14px;
+      font-family: "PingFang SC";
+      color: #666;
+      line-height: 16px;
+      width: 259px;
+    }
   }
 }
 
