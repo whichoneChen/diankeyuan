@@ -17,6 +17,7 @@
 
       <ConferenceInfo/>
 
+      <Support/>
 
     </el-main>
   </el-container>
@@ -29,6 +30,7 @@ import Menu from "./component/Menu";
 import Carousel from "./component/Carousel";
 import NameCard from "./component/NameCard";
 import ConferenceInfo from "./component/ConferenceInfo";
+import Support from "./component/Support";
 
 
 export default {
@@ -39,7 +41,8 @@ export default {
     MainBody,
     Menu,
     Carousel,
-    ConferenceInfo
+    ConferenceInfo,
+    Support,
   },
 
 }

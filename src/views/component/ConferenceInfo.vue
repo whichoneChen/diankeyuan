@@ -47,9 +47,6 @@
             </ul>
           </div>
         </Card>
-
-
-
         <!--Tutorials && PANELS面板-->
         <Card v-for="item in cardInfo">
           <template #title>
@@ -62,8 +59,6 @@
             </li>
           </ul>
         </Card>
-
-
 
       </el-col>
     </el-row>
@@ -238,7 +233,7 @@ export default {
   }
 
   li{
-    margin: 30px 0;
+    margin: 20px 0;
   }
 
   .date-item{
@@ -262,7 +257,8 @@ export default {
   li{
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px 0;
+    height: 61px;
 
     .card-panel-description{
       margin-left: 20px;

@@ -17,7 +17,7 @@ export default {
 .my-card{
   background-color: #fff;
   z-index: 10;
-  height: 309px;
+  height: 255px;
   width: 429px;
   margin-bottom: 24px;
   box-shadow: 0px 0px 24px 0px rgba(153, 153, 153, 0.82);
