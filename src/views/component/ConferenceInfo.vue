@@ -29,8 +29,33 @@
 
       </el-col>
 
-      <el-col :span="12">
+      <el-col :span="12" class="right-cards">
+        <Card>
+          <template #title>
+            <span>
+              {{"Important Dates".toUpperCase()}}
+            </span>
+          </template>
 
+          <div class="card-date-list">
+            <ul>
+              <li v-for="item in dateList">
+                <span class="date-item">{{item.date}}</span>
+                <span class="date-agenda">{{item.agenda}}</span>
+              </li>
+            </ul>
+          </div>
+
+
+        </Card>
+
+        <Card>
+
+        </Card>
+
+        <Card>
+
+        </Card>
 
       </el-col>
     </el-row>
@@ -38,8 +63,10 @@
 </template>
 
 <script>
+import Card from "../../components/Card";
 export default {
   name: "ConferenceInfo",
+  components: {Card},
   methods:{
     submitNow(){
       console.log("Submit Now!");
@@ -54,6 +81,19 @@ export default {
           "4. Electronic Power Grid Systems",
           "5. Transportation Electrification",
           "6. Emerging Technology Applications",
+      ],
+      dateList:[
+        {
+          date:'01 Jul. 2021',
+          agenda:'Full paper submission'
+        },
+        {
+          date:'01 Sep. 2021',
+          agenda:'Notification of acceptance/rejection\n'
+        },        {
+          date:'03 Sep. 2021',
+          agenda:'Presentation submission'
+        },
       ]
     }
   }
@@ -134,8 +174,40 @@ export default {
       margin-bottom: 35px;
     }
   }
+}
 
+.right-cards{
+  position: relative;
 
+  &>*{
+    position: relative;
+    top: -30px;
+  }
+}
+
+.card-date-list{
+  list-style: url("../../assets/images/rec1.png");
+
+  ul:first-child{
+    color:#484AB5;
+  }
+
+  li{
+    margin: 30px 0;
+  }
+
+  .date-item{
+    display: block;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 800;
+  }
+
+  .date-agenda{
+    display: block;
+    font-size: 16px;
+    color: #666;
+  }
 }
 
 </style>
