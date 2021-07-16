@@ -19,6 +19,8 @@
 
       <Support/>
 
+      <Footer/>
+
     </el-main>
   </el-container>
 </template>
@@ -31,6 +33,7 @@ import Carousel from "./component/Carousel";
 import NameCard from "./component/NameCard";
 import ConferenceInfo from "./component/ConferenceInfo";
 import Support from "./component/Support";
+import Footer from "./component/Footer";
 
 
 export default {
@@ -43,6 +46,7 @@ export default {
     Carousel,
     ConferenceInfo,
     Support,
+    Footer,
   },
 
 }
