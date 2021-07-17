@@ -120,15 +120,15 @@ export default {
           title:'IMPORTANT PANELS',
           persons:[
             {
-              avatar:'smart.png',
+              avatar:'ele.png',
               description:'Electrical Power Systems and Power Electronic Converter Requirements for Transportation Electrification'
             },
             {
-              avatar: 'dev.png',
+              avatar: 'multi.png',
               description: 'Multi-Physics Design of High Speed Permanent Magnet Synchronous Machines'
             },
             {
-              avatar: 'tech.png',
+              avatar: 'edge.png',
               description: 'Edge-Cloud Coordinative Distribution IoT Solution'
             }
           ]
