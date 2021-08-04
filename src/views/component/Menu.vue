@@ -45,15 +45,9 @@
 
         <el-submenu index="7">
           <template slot="title">HOTEL/NANJING</template>
-          <el-menu-item index="7-1">选项7-1</el-menu-item>
-          <el-menu-item index="7-2">选项7-2</el-menu-item>
-          <el-menu-item index="7-3">选项7-3</el-menu-item>
-        </el-submenu>
-
-        <el-submenu index="8">
-          <template slot="title">MORE</template>
-          <el-menu-item index="8-1">CONFERENCE VENUE</el-menu-item>
-          <el-menu-item index="8-2">ACCOMMADATION</el-menu-item>
+          <el-menu-item index="7-1">CONFERENCE VENUE</el-menu-item>
+          <el-menu-item index="7-2">ACCOMMADATION</el-menu-item>
+          <el-menu-item index="7-3">CONTACT INFORMATION</el-menu-item>
         </el-submenu>
 
       </el-menu>
@@ -64,8 +58,16 @@
 export default {
   name: "Menu",
   methods:{
-    handleSelect(){
-      console.log("下拉菜单被点击")
+    handleSelect(key,item){
+      const keyDict = {
+        '7-1': this.getVenue,
+      }
+      if(Object.keys(keyDict).includes(key)){
+        keyDict[key]();
+      }
+    },
+    getVenue(){
+      this.$router.push('/venue');
     }
   },
   mounted(){
@@ -73,13 +75,13 @@ export default {
     document.getElementsByTagName('i').forEach((item)=>{
       item.setAttribute('style',"color: #fff")
     })
-  }
+  },
 }
 </script>
 
 <style scoped lang="scss">
 .menu-container{
-  width: 100%;
+  width: 1920px;
   background-color:#11A3CA;
 }
 

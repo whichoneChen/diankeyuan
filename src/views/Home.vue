@@ -1,28 +1,13 @@
 <template>
-  <el-container>
-    <el-header style="height: 167px">
-      <div class="img-container">
-        <img :src="require('assets/images/head1.png')" class="hl-img" alt="大会图标">
-        <img src="~@/assets/images/head2.png" class="hr-img" alt="学会会标">
-      </div>
-    </el-header>
+  <div class="home-main">
+    <Carousel/>  <!-- 轮播图-->
 
-    <el-main>
+    <NameCard/>
 
-      <Menu/>  <!-- 下拉菜单     -->
+    <ConferenceInfo/>
 
-      <Carousel/>  <!-- 轮播图-->
-
-      <NameCard/>
-
-      <ConferenceInfo/>
-
-      <Support/>
-
-      <Footer/>
-
-    </el-main>
-  </el-container>
+    <Support/>
+  </div>
 </template>
 
 <script>
@@ -56,6 +41,11 @@ export default {
 @import "styles/header.scss";
 
 .el-main{
+  width: 100%;
+  padding: 0;
+}
+
+.home-main{
   width: 100%;
   padding: 0;
 }

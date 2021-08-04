@@ -2,24 +2,24 @@
   <div>
     <div style="height: 217px;margin: 156px 0">
       <div class="host-side">
-        <img :src="require('assets/images/host.png')" alt="host" id="host-img">
-        <img :src="require('assets/images/grid.png')" alt="host" id="grid-img">
-        <img :src="require('assets/images/dongnan.png')" alt="host" id="dongnan-img">
+        <img :src="require('assets/images/home/host.png')" alt="host" id="host-img">
+        <img :src="require('assets/images/home/grid.png')" alt="host" id="grid-img">
+        <img :src="require('assets/images/home/dongnan.png')" alt="host" id="dongnan-img">
       </div>
 
       <div class="support-side">
-        <img :src="require('assets/images/supporters.png')" alt="supporter" id="sup-img">
-        <img :src="require('assets/images/qinghua.png')" alt="supporter" id="qinghua-img">
-        <img :src="require('assets/images/hehai.png')" alt="supporter" id="hehai-img">
+        <img :src="require('assets/images/home/supporters.png')" alt="supporter" id="sup-img">
+        <img :src="require('assets/images/home/qinghua.png')" alt="supporter" id="qinghua-img">
+        <img :src="require('assets/images/home/hehai.png')" alt="supporter" id="hehai-img">
       </div>
     </div>
 
     <div class="media-supporter">
       <div>
-        <img :src="require('assets/images/media.png')" alt="media supporters">
+        <img :src="require('assets/images/home/media.png')" alt="media supporters">
       </div>
       <div>
-        <img :src="require('assets/images/five.png')" alt="five supporters">
+        <img :src="require('assets/images/home/five.png')" alt="five supporters">
       </div>
     </div>
 

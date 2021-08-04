@@ -16,13 +16,13 @@
           limited to) the following:
         </span>
 
-        <img class="sub-img" :src="require('assets/images/submit.png')" alt="Submit Now" @click="submitNow"/>
+        <img class="sub-img" :src="require('assets/images/home/submit.png')" alt="Submit Now" @click="submitNow"/>
 
         <div class="agenda-list">
           <ul>
             <li v-for="agenda in agendas">
               {{agenda.toUpperCase()}}
-              <img :src="require('assets/images/triangle.png')" alt="">
+              <img :src="require('assets/images/home/triangle.png')" alt="">
             </li>
           </ul>
         </div>
@@ -54,7 +54,7 @@
           </template>
           <ul class="card-panel">
             <li v-for="person in item.persons">
-              <img :src="require('assets/images/'+person.avatar)" alt="avatar">
+              <img :src="require('assets/images/home/'+person.avatar)" alt="avatar">
               <span class="card-panel-description">{{person.description}}</span>
             </li>
           </ul>
@@ -147,7 +147,7 @@ export default {
   height: 920px;
   margin-top: 120px;
   margin-bottom: 156px;
-  background-image: url("../../assets/images/bg1.png");
+  background-image: url("../../assets/images/home/bg1.png");
   padding: 0 360px;
 }
 
@@ -226,7 +226,7 @@ export default {
 }
 
 .card-date-list{
-  list-style: url("../../assets/images/rec1.png");
+  list-style: url("../../assets/images/home/rec1.png");
 
   ul:first-child{
     color:#484AB5;

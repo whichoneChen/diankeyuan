@@ -115,7 +115,7 @@ export default {
 
 <style scoped lang="scss">
 .home-footer{
-  height: 400px;
+  height: 460px;
   background-color: #999999;
 
   &>div{

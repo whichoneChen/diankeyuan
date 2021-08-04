@@ -1,17 +1,22 @@
 <template>
-  <el-header style="height: 167px">
-    <div class="img-container">
-      <img :src="require('assets/images/head1.png')" class="hl-img" alt="大会图标">
-      <img src="~@/assets/images/head2.png" class="hr-img" alt="学会会标">
-    </div>
-  </el-header>
+    <el-header style="height: 167px">
+      <div class="img-container">
+        <img :src="require('assets/images/head1.png')" class="hl-img" alt="大会图标">
+        <img src="~@/assets/images/head2.png" class="hr-img" alt="学会会标">
+      </div>
+      <Menu/>
+    </el-header>
+  </div>
+
 </template>
 
 <script>
+import Menu from "./Menu";
 
 export default {
   name: "Header",
   components:{
+    Menu,
   }
 }
 </script>

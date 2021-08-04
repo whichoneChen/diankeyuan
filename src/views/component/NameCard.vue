@@ -1,7 +1,7 @@
 <template>
   <div class="name-container">
     <div align="center">
-      <img :src="require('@/assets/images/seeyou.png')" alt="">
+      <img :src="require('@/assets/images/home/seeyou.png')" alt="">
     </div>
 
     <div>
@@ -26,7 +26,7 @@
     <div class="name-list">
       <div v-for="(item,index) in nameList" class="profile">
         <div>
-          <img :src="require('@/assets/images/avatar'+ (index +1) + '.png')" alt="avatar">
+          <img :src="require('@/assets/images/home/avatar'+ (index +1) + '.png')" alt="avatar">
         </div>
         <div>{{item.name}}</div>
         <div>{{item.institution}}</div>

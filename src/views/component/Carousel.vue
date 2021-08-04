@@ -13,7 +13,7 @@
         ref="mycarousel"
     >
       <el-carousel-item v-for="item in 3" :key="item">
-        <img :src="require('assets/images/swiper'+ item + '.png')" alt="轮播图">
+        <img :src="require('assets/images/home/swiper'+ item + '.png')" alt="轮播图">
       </el-carousel-item>
     </el-carousel>
     <a class="caro-arrow right-arrow" href="#" @click="nextItem"> &gt </a>
