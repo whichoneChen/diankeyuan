@@ -11,14 +11,14 @@
 </template>
 
 <script>
-import Header from "./component/Header";
+import Header from "../components/Header";
 import MainBody from "./component/MainBody";
-import Menu from "./component/Menu";
+import Menu from "../components/Menu";
 import Carousel from "./component/Carousel";
 import NameCard from "./component/NameCard";
 import ConferenceInfo from "./component/ConferenceInfo";
 import Support from "./component/Support";
-import Footer from "./component/Footer";
+import Footer from "../components/Footer";
 
 
 export default {

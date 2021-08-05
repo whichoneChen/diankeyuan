@@ -22,10 +22,8 @@
 
 <script>
 import Home from "./views/Home";
-import Header from "./views/component/Header";
-import MainBody from "./views/component/MainBody";
-import Menu from "./views/component/Menu";
-import Footer from "./views/component/Footer";
+import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 export default{
   name:'App',

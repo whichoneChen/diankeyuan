@@ -24,9 +24,7 @@
 
         <el-submenu index="4">
           <template slot="title">KEYNOTE SPEAKERS</template>
-          <el-menu-item index="4-1">选项4-1</el-menu-item>
-          <el-menu-item index="4-2">选项4-2</el-menu-item>
-          <el-menu-item index="4-3">选项4-3</el-menu-item>
+          <el-menu-item index="4-1">KEYNOTE SPEAKERS</el-menu-item>
         </el-submenu>
 
         <el-submenu index="5">
@@ -59,8 +57,12 @@ export default {
   name: "Menu",
   methods:{
     handleSelect(key,item){
+      console.log(key)
       const keyDict = {
+        '1':this.getHome,
+        '4-1':this.getKeynoteSpeakers,
         '7-1': this.getVenue,
+
       }
       if(Object.keys(keyDict).includes(key)){
         keyDict[key]();
@@ -68,6 +70,12 @@ export default {
     },
     getVenue(){
       this.$router.push('/venue');
+    },
+    getKeynoteSpeakers(){
+      this.$router.push('/keynote')
+    },
+    getHome(){
+      this.$router.push('/')
     }
   },
   mounted(){
