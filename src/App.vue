@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header style="height: 229px; padding: 0">
+      <el-header style="height: 230px; padding: 0">
         <div class="img-container">
           <img :src="require('assets/images/head1.png')" class="hl-img" alt="大会图标">
           <img src="~@/assets/images/head2.png" class="hr-img" alt="学会会标">
