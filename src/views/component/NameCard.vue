@@ -5,22 +5,33 @@
     </div>
 
     <div>
-      <div class="left-text name-text">
-        IEEE PES and CSEE (Chinese Society of Electrical Engineering) have reached an
-        agreement on co-organizing the IEEE Sustainable Power and Energy Conference
-        (iSPEC). Parallel with the IEEE PES General Meeting in North America every
-        summer, iSPEC will be held every winter. The iSPEC 2021 will be held in November
-        25-27, 2021 in Nanjing, China. The theme of the meeting is “Energy Transition
-        for Carbon Neutrality.”
-      </div>
+      <el-row>
+        <el-col :lg="12" :md="24" :sm="24">
+          <div class="left-text name-text">
+            <span>
+              IEEE PES and CSEE (Chinese Society of Electrical Engineering) have reached an
+              agreement on co-organizing the IEEE Sustainable Power and Energy Conference
+              (iSPEC). Parallel with the IEEE PES General Meeting in North America every
+              summer, iSPEC will be held every winter. The iSPEC 2021 will be held in November
+              25-27, 2021 in Nanjing, China. The theme of the meeting is “Energy Transition
+              for Carbon Neutrality.”
+            </span>
+          </div>
+        </el-col>
 
-      <div class="right-text name-text">
-        We warmly invite the scholars, professors, engineers and students in the field of
-        power & energy to submit your research papers to iSPEC 2021. The iSPEC will
-        bring together practicing power engineers and academics from all over the world.
-        The aim of the conference is to provide an international forum for experts to promote
-        , share, and discuss various issues and developments in the field of power & energy.
-      </div>
+        <el-col :lg="12" :md="24" :sm="24">
+          <div class="right-text name-text">
+            <span>
+            We warmly invite the scholars, professors, engineers and students in the field of
+            power & energy to submit your research papers to iSPEC 2021. The iSPEC will
+            bring together practicing power engineers and academics from all over the world.
+            The aim of the conference is to provide an international forum for experts to promote
+            , share, and discuss various issues and developments in the field of power & energy.
+            </span>
+          </div>
+
+        </el-col>
+      </el-row>
     </div>
 
     <div class="name-list">
@@ -94,23 +105,29 @@ export default {
     height: 135px;
     display: inline-block;
     word-wrap: break-word;
-    width: 570px;
     font-weight: bold;
     color: #666666;
+
+    span{
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+
+    }
   }
 
   .left-text{
     /*width: 556px;*/
-    margin-left: 360px;
+    //margin-left: 360px;
   }
 
   .right-text{
     /*width: 570px;*/
-    margin-left: 70px;
+    //margin-left: 70px;
   }
 
   .name-list{
-    padding: 0 360px;
+    padding: 0 60px;
     //display: flex;
     //justify-content: space-around;
   }

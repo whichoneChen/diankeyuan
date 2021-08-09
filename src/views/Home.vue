@@ -48,6 +48,7 @@ export default {
 .home-main{
   width: 100%;
   padding: 0;
+  overflow: hidden;
 }
 
 </style>
