@@ -89,12 +89,14 @@ export default {
 
 <style scoped lang="scss">
 .menu-container{
-  width: 1920px;
+  //width: 1920px;
   background-color:#11A3CA;
+  display: flex;
+  justify-content: center;
 }
 
 .el-menu{
-  padding: 5px 351px 5px 362px;
+  //padding: 5px 0px 5px 0px;
   font-size: 16px;
 
   #more-icon{
