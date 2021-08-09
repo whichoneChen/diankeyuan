@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%; position: relative">
+  <div style="width: 100%; position: relative; z-index: -999">
     <div class="text-region" >
       <div class="t-greeting">SEE YOU IN NANJING/CHINA</div>
       <div class="t-date">NOVEMBER 25-27, 2021</div>

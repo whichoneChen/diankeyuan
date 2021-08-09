@@ -93,6 +93,7 @@ export default {
   background-color:#11A3CA;
   display: flex;
   justify-content: center;
+  z-index: 1000;
 }
 
 .el-menu{
