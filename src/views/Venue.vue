@@ -94,7 +94,7 @@ export default {
   padding-top: 1px;
 
   .accomodation-main{
-    margin: 0 60px;
+    margin: 0 100px;
 
     .hotel-panel{
       margin: 56px 0 71px 0;

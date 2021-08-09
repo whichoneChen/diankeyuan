@@ -159,7 +159,7 @@ export default {
   margin-top: 120px;
   margin-bottom: 156px;
   background-image: url("../../assets/images/home/bg1.png");
-  padding: 0 60px;
+  padding: 0 100px;
 }
 
 .text-box1{

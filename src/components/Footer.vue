@@ -139,7 +139,7 @@ export default {
   background-color: #999999;
 
   &>div{
-    margin: 50px 60px;
+    margin: 50px 100px;
   }
 }
 

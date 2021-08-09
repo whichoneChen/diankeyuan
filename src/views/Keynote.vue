@@ -8,7 +8,20 @@
 
     <div class="keynote-speakers">
       <el-row>
-        <el-col :span="8" v-for="speaker in speakers">
+        <el-col :md="8" :sm="12" v-for="speaker in speakers1">
+          <div class="speaker">
+            <div class="speaker-avatar">
+              <img :src="require('assets/images/keynote/'+speaker.avatar+'.png')" alt="">
+            </div>
+            <div class="speaker-name">{{speaker.name}}</div>
+            <div class="speaker-affiliation">{{speaker.affiliation}}</div>
+            <div class="speaker-intro">{{speaker.intro}}</div>
+          </div>
+        </el-col>
+      </el-row>
+
+      <el-row>
+        <el-col :md="8" :sm="12" v-for="speaker in speakers2">
           <div class="speaker">
             <div class="speaker-avatar">
               <img :src="require('assets/images/keynote/'+speaker.avatar+'.png')" alt="">
@@ -29,7 +42,7 @@ export default {
   name: "Keynote",
   data(){
     return{
-      speakers:[
+      speakers1:[
         {
           avatar:'speaker1',
           name:'Jianbo Guo',
@@ -47,7 +60,9 @@ export default {
           name:'Mohammad Shahidehpour',
           affiliation:'(Fellow of American Academy of Engineering)',
           intro:'Dr. Mohammad Shahidehpour joined Illinois Institute of Technology (Illinois Tech) in 1983 where he is presently a University Distinguished Professor. He also serves as the Bodine Chair Professor, Director of the Robert W. Galvin Center for Electricity Innovation, and Associate Director of the Wanger Institute for Sustainable Energy Research (WISER) at Illinois Tech. He is a Fellow of IEEE, Fellow of the American Association for the Advancement of Science (AAAS), Fellow of the National Academy of Inventors (NAI), Laureate of KIA (Khwarizmi International Award), and an elected member of the US National Academy of Engineering. He is listed as a highly cited researcher on the Web of Science (ranked in the top 1% by citations demonstrating significant influence among his peers). '
-        },
+        },]
+      ,
+      speakers2:[
         {
           avatar:'speaker4',
           name:'Saifur Rahman',
@@ -82,11 +97,10 @@ export default {
 }
 
 .keynote-speakers{
-  margin: 50px 350px;
+  margin: 50px 100px;
 
   .speaker{
     margin: 50px;
-    height: 660px;
 
     .speaker-avatar,.speaker-name,.speaker-affiliation{
       text-align: center;
