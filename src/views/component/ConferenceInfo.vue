@@ -72,7 +72,7 @@ export default {
   components: {Card},
   methods:{
     submitNow(){
-      console.log("Submit Now!");
+      window.location.href = "http://action.csee.org.cn:8080/ICEE/a/login?redLoginUrl=/a/paper/goPaper?activityId=243"
     }
   },
   data(){
@@ -103,16 +103,16 @@ export default {
           title:'IMPORTANT TUTORIALS',
           persons:[
             {
-              avatar:'smart.png',
-              description:'Smart grid paradigm in facilitating cost effective transition to resilient low carbon energy'
+              avatar:'2-1.png',
+              description:'•  Electronic Power Grid Systems'
             },
             {
-              avatar: 'dev.png',
-              description: 'Developments in Flexible LCC HVDC'
+              avatar: '2-2.png',
+              description: '•  New power system with cyber and physics integration \n'
             },
             {
-              avatar: 'tech.png',
-              description: 'Techno-economic analysis and optimization of local energy systems'
+              avatar: '2-3.png',
+              description: '•  New electric machine and motor drive'
             }
           ]
         },
@@ -120,16 +120,16 @@ export default {
           title:'IMPORTANT PANELS',
           persons:[
             {
-              avatar:'ele.png',
-              description:'Electrical Power Systems and Power Electronic Converter Requirements for Transportation Electrification'
+              avatar:'2-4.png',
+              description:'•  Special Panel for Modern Power System'
             },
             {
-              avatar: 'multi.png',
-              description: 'Multi-Physics Design of High Speed Permanent Magnet Synchronous Machines'
+              avatar: '2-5.png',
+              description: '•  Special Panel for Female Scientists   '
             },
             {
-              avatar: 'edge.png',
-              description: 'Edge-Cloud Coordinative Distribution IoT Solution'
+              avatar: '2-6.png',
+              description: '•  Special Panel for NSFC funds   '
             }
           ]
         }

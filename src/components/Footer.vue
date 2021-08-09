@@ -11,15 +11,11 @@
             >
           </div>
           <div class="quick-links">
-            <div style="color:#FFF100 ">
-              <span>
-                Call for papers
-              </span>
-            </div>
-            <div v-for="item in quickLinkData">
-              <span>
-                {{item}}
-              </span>
+            <div>
+              <a href="#" @click="$router.push('/')">Call for Papers</a>
+              <a v-for="quicklink in quickLinkData" :href="quicklink.link">
+                {{quicklink.text}}
+              </a>
             </div>
           </div>
         </el-col>
@@ -43,7 +39,7 @@
               School of Electrical Engineering, Southeast University
             </div>
             <div>
-              <sup>TEL</sup><span>ephone:(+86) 13813860619</span>
+              <span>TEL:(+86) 13813860619</span>
             </div>
           </div>
 
@@ -55,7 +51,7 @@
               School of Electrical Engineering, Southeast University
             </div>
             <div>
-              <sup>TEL</sup><span>:(+86) 15251867159</span>
+              <span>TEL:(+86) 15251867159</span>
             </div>
             <div>
               E-mail: ispec2021@csee.org.cn
@@ -80,7 +76,7 @@
               Chinese Society for Electrical Engineering
             </div>
             <div>
-              <sup>TEL</sup><span>: 010-63416782</span><span>, (+86) 15251867159</span>
+              <span>TEL: 010-63416782</span><span>, (+86) 15251867159</span>
             </div>
             <div>
               E-mail: min-liu@csee.org.cn
@@ -99,14 +95,38 @@ export default {
   data(){
     return{
       quickLinkData:[
-        "Full paper template",
-        "Presentation template",
-        "Poster template",
-        "Certificate of Acceptance",
-        "iSPEC2020 Video Playback",
-        "iSPEC 2020 ",
-        "Southeast University",
-        "SEU School of Electrical Engineering",
+        {
+          text:'Full Paper Template',
+          link:'',
+        },
+        {
+          text:'Presentation Template',
+          link:'',
+        },
+        {
+          text:'Poster Template',
+          link:'',
+        },
+        {
+          text:'Certificate of Acceptance',
+          link:'',
+        },
+        {
+          text:'iSPEC2020 Video Playback',
+          link:'https://i.printhappy.cn/server/catalog.php?id=30',
+        },
+        {
+          text:'iSPEC 2020',
+          link:'http://ieee-spec.csee.org.cn/2020/',
+        },
+        {
+          text:'Southeast University',
+          link:'https://www.seu.edu.cn/',
+        },
+        {
+          text:'SEU School of Electrical Engineering',
+          link:'https://ee.seu.edu.cn/',
+        },
       ]
     }
   }
@@ -137,9 +157,15 @@ export default {
     margin: 3px 0;
     line-height: 24px;
 
-    span{
-      cursor: pointer;
+    a{
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      :visited{
+        color: #FFF100;
+      }
     }
+
   }
 }
 

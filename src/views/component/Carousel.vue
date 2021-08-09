@@ -2,7 +2,7 @@
   <div style="width: 100%; position: relative">
     <div class="text-region" >
       <div class="t-greeting">SEE YOU IN NANJING/CHINA</div>
-      <div class="t-date">NOVEMBER 25-2 7, 2021</div>
+      <div class="t-date">NOVEMBER 25-27, 2021</div>
     </div>
     <a class="caro-arrow left-arrow" href="#" @click="prevItem"> &lt </a>
     <el-carousel
