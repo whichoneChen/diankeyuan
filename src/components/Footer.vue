@@ -135,11 +135,11 @@ export default {
 
 <style scoped lang="scss">
 .home-footer{
-  height: 460px;
+  //height: 460px;
   background-color: #999999;
 
   &>div{
-    margin: 50px 360px;
+    margin: 50px 60px;
   }
 }
 
