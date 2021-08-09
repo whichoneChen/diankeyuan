@@ -15,8 +15,15 @@
             <div>Email: reservation@crowneplazajiangning.com</div>
           </div>
           <div class="hotel-img">
-              <img :src="require('assets/images/venue/hotel1.png')" alt="hotel">
-              <img :src="require('assets/images/venue/hotel2.png')" alt="hotel">
+            <el-row>
+              <el-col :md="12" :sm="24">
+                <img :src="require('assets/images/venue/hotel1.png')" alt="hotel">
+              </el-col>
+
+              <el-col  :md="12" :sm="24">
+                <img :src="require('assets/images/venue/hotel2.png')" alt="hotel">
+              </el-col>
+            </el-row>
           </div>
         </div>
 
@@ -82,12 +89,12 @@ export default {
 .accomodation{
   width: 100%;
   background-image: url("../assets/images/venue/bcg2.png");
-  height: 1530px;
+  //height: 1530px;
   margin: 71px 0;
   padding-top: 1px;
 
   .accomodation-main{
-    margin: 0 410px;
+    margin: 0 60px;
 
     .hotel-panel{
       margin: 56px 0 71px 0;
@@ -106,13 +113,14 @@ export default {
 
       .hotel-img{
         margin-top: 40px;
-        display: flex;
-        justify-content: space-between;
+        text-align: center;
+        //display: flex;
+        //justify-content: space-between;
 
-        &>div{
-          background-color: #fff;
-          opacity: 1;
-        }
+        //&>div{
+        //  background-color: #fff;
+        //  opacity: 1;
+        //}
       }
     }
 
