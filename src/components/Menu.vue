@@ -6,7 +6,7 @@
           text-color="#fff"
           background-color="#11A3CA"
       >
-        <el-menu-item index="1">Home</el-menu-item>
+        <el-menu-item index="1">HOME</el-menu-item>
 
         <el-submenu index="2">
           <template slot="title">CALL FOR PAPERS</template>

@@ -24,13 +24,15 @@
     </div>
 
     <div class="name-list">
-      <div v-for="(item,index) in nameList" class="profile">
-        <div>
-          <img :src="require('@/assets/images/home/avatar'+ (index +1) + '.png')" alt="avatar">
-        </div>
-        <div>{{item.name}}</div>
-        <div>{{item.institution}}</div>
-      </div>
+      <el-row>
+        <el-col :md="8" :sm="12" v-for="(item,index) in nameList" class="profile">
+          <div>
+            <img :src="require('@/assets/images/home/'+item.avatar)" alt="avatar">
+          </div>
+          <div class="profile-name">{{item.name}}</div>
+          <div>{{item.institution}}</div>
+        </el-col>
+      </el-row>
     </div>
 
   </div>
@@ -43,21 +45,34 @@ export default {
     return {
       nameList:[
         {
-          name:'Dr. Tim Coombs',
-          institution: '(University of Cambridge)'
+          name:'Shu Yinbiao',
+          institution: '(Fellow of China Engineering Academy)',
+          avatar:'1-1.png'
         },
         {
-          name:'Prof. Kang Li',
-          institution: '(University of Leeds)'
-        },        {
-          name:'Prof. Jihong Wang',
-          institution: '(University of Warwick)'
-        },        {
-          name:'Dr. David M. Laverty',
-          institution: '(Queen’s University Belfast)'
-        },        {
-          name:'Professor Gu Wei',
-          institution: '(Southeast University）'
+          name:'Zhou Xiaoxin',
+          institution: '(Fellow of Chinese Academy of Sciences)',
+          avatar:'1-2.png'
+        },
+        {
+          name:'Guo Jianbo',
+          institution: '(Fellow of China Engineering Academy)',
+          avatar:'1-3.png'
+        },
+        {
+          name:'Ding Yulong',
+          institution: '(Fellow of Royal Academy of Engineering)',
+          avatar:'1-4.png'
+        },
+        {
+          name:'Mohammad Shahidehpour',
+          institution: '(Fellow of American Academy of Engineering)',
+          avatar:'1-5.png'
+        },
+        {
+          name:'Goran',
+          institution: '(Professor, Imperial College London)',
+          avatar:'1-6.png'
         }
       ]
     }
@@ -96,8 +111,8 @@ export default {
 
   .name-list{
     padding: 0 360px;
-    display: flex;
-    justify-content: space-around;
+    //display: flex;
+    //justify-content: space-around;
   }
 
   .profile{
@@ -105,12 +120,17 @@ export default {
     height: 200px;
     text-align: center;
     font-family: "PingFangSC-Bold";
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21.88px;
+    margin: 30px 0;
 
-    &>div:first-child{
-      margin-bottom: 31px;
+    .profile-name{
+      font-size: 20px;
+      font-weight: bold;
     }
+    //&>div:first-child{
+    //  margin-bottom: 31px;
+    //}
   }
 
 </style>
