@@ -21,7 +21,7 @@ export default {
   width: 429px;
   margin-bottom: 24px;
   box-shadow: 0px 0px 24px 0px rgba(153, 153, 153, 0.82);
-  padding: 30px 30px 24px 59px;
+  padding: 12px 30px 15px 59px;
 
   .my-card-title{
     font-size: 30px;

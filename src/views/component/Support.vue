@@ -1,28 +1,31 @@
 <template>
   <div>
-    <div style="height: 217px;margin: 156px 0">
-      <div class="host-side">
-        <img :src="require('assets/images/home/host.png')" alt="host" id="host-img">
-        <img :src="require('assets/images/home/grid.png')" alt="host" id="grid-img">
-        <img :src="require('assets/images/home/dongnan.png')" alt="host" id="dongnan-img">
-      </div>
+    <el-row>
+      <el-col :md="{span:8, offset:3}">
+        <div class="support-title">
+          <span>HOST</span>
+        </div>
+        <div class="support-img">
+          <img :src="require('assets/images/home/host.png')" alt="host">
+        </div>
 
-      <div class="support-side">
-        <img :src="require('assets/images/home/supporters.png')" alt="supporter" id="sup-img">
-        <img :src="require('assets/images/home/qinghua.png')" alt="supporter" id="qinghua-img">
-        <img :src="require('assets/images/home/hehai.png')" alt="supporter" id="hehai-img">
-      </div>
-    </div>
+        <div class="support-title">
+          <span>SUPPOTERS</span>
+        </div>
+        <div class="support-img">
+          <img :src="require('assets/images/home/supporter.png')" alt="supporters">
+        </div>
+      </el-col>
 
-    <div class="media-supporter">
-      <div>
-        <img :src="require('assets/images/home/media.png')" alt="media supporters">
-      </div>
-      <div>
-        <img :src="require('assets/images/home/five.png')" alt="five supporters">
-      </div>
-    </div>
-
+      <el-col :md="{span:10, offset:1}">
+        <div class="support-title">
+          <span>MEDIA SUPPORTERS</span>
+        </div>
+        <div class="support-img">
+          <img :src="require('assets/images/home/media.png')" alt="media supporters">
+        </div>
+      </el-col>
+    </el-row>
   </div>
 
 </template>
@@ -34,66 +37,22 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.host-side{
-  display: inline-block;
-  height: 100%;
-  width: 962px;
-  margin-right: 11px;
-  position: relative;
-  background-color: #16abd2;
-
-  #host-img{
-    position: absolute;
-    top:27px;
-    left:489px;
-  }
-
-  #dongnan-img{
-    position: absolute;
-    top:99px;
-    left:406px;
-  }
-
-  #grid-img{
-    position: absolute;
-    top:99px;
-    left: 623px;
+.support-title{
+  color: #fff;
+  //width: ;
+  font-size: 18px;
+  font-family: FZZDHJW;
+  span{
+    background-color: #007EAB;
+    display: inline-block;
+    padding: 3px 10px;
   }
 }
 
-.support-side{
-  display: inline-block;
-  height: 100%;
-  position: relative;
-  width: 940px;
-  background-color: #16abd2;
-
-  #sup-img{
-    position: absolute;
-    top: 31px;
-    left: 217px;
-  }
-
-  #qinghua-img{
-    position: absolute;
-    top: 98px;
-    left: 163px;
-  }
-
-  #hehai-img{
-    position: absolute;
-    top: 98px;
-    left: 445px;
-  }
-}
-
-.media-supporter{
-
-  margin-bottom: 40px;
-
-  div{
-    text-align: center;
-  }
+.support-img{
+  background-color: #EEEEEE;
+  padding: 10px 20px;
+  margin-bottom: 30px;
 }
 
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="confer-zone">
     <el-row :gutter="90">
-      <el-col :span="12">
+      <el-col :lg="12" :md="12" :sm="24">
         <span class="text-box1">
           All accepted papers will be included in IEEE Xplore and indexed by EI Compendex.
         </span>
@@ -29,9 +29,9 @@
 
       </el-col>
 
-      <el-col :span="12" class="right-cards">
+      <el-col :lg="12" :md="12" :sm="24" class="right-cards">
         <!--   日期面板     -->
-        <Card>
+        <Card class="time-card">
           <template #title>
             <span>
               {{"Important Dates".toUpperCase()}}
@@ -48,17 +48,30 @@
           </div>
         </Card>
         <!--Tutorials && PANELS面板-->
-        <Card v-for="item in cardInfo">
+        <Card>
           <template #title>
-            <span>{{item.title}}</span>
+            <span>{{cardInfo1.title}}</span>
           </template>
           <ul class="card-panel">
-            <li v-for="person in item.persons">
+            <li v-for="person in cardInfo1.persons">
               <img :src="require('assets/images/home/'+person.avatar)" alt="avatar">
               <span class="card-panel-description">{{person.description}}</span>
             </li>
           </ul>
         </Card>
+
+        <Card class="last-card">
+          <template #title>
+            <span>{{cardInfo2.title}}</span>
+          </template>
+          <ul class="card-panel">
+            <li v-for="person in cardInfo2.persons">
+              <img :src="require('assets/images/home/'+person.avatar)" alt="avatar">
+              <span class="card-panel-description">{{person.description}}</span>
+            </li>
+          </ul>
+        </Card>
+
 
       </el-col>
     </el-row>
@@ -98,8 +111,7 @@ export default {
           agenda:'Presentation submission'
         },
       ],
-      cardInfo:[
-        {
+      cardInfo1: {
           title:'IMPORTANT TUTORIALS',
           persons:[
             {
@@ -116,7 +128,7 @@ export default {
             }
           ]
         },
-        {
+      cardInfo2:{
           title:'IMPORTANT PANELS',
           persons:[
             {
@@ -133,7 +145,6 @@ export default {
             }
           ]
         }
-      ]
 
     }
   }
@@ -144,11 +155,11 @@ export default {
 
 .confer-zone{
   //width: 100%;
-  height: 920px;
+  //height: 900px;
   margin-top: 120px;
   margin-bottom: 156px;
   background-image: url("../../assets/images/home/bg1.png");
-  padding: 0 360px;
+  padding: 0 60px;
 }
 
 .text-box1{
@@ -219,10 +230,20 @@ export default {
 .right-cards{
   position: relative;
 
-  &>*{
+  .time-card{
     position: relative;
-    top: -30px;
+    top:-30px;
   }
+
+  .last-card{
+    position: relative;
+    top:40px
+  }
+
+  //&:last-child{
+  //  position: relative;
+  //  top:30px;
+  //}
 }
 
 .card-date-list{
