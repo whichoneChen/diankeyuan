@@ -24,6 +24,11 @@ const routes = [
     path: '/paper',
     name:'Paper',
     component: () => import('../views/CallForPaper')
+  },
+  {
+    path: '/programme',
+    name: 'Programme',
+    component: () => import('../views/Programme')
   }
 ]
 

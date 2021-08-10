@@ -14,12 +14,14 @@
 <!--          <el-menu-item index="2-1">CALL FOR PAPERS</el-menu-item>-->
 <!--        </el-submenu>-->
 
-        <el-submenu index="3">
-          <template slot="title">PROGRAMME</template>
-          <el-menu-item index="3-1">选项3-1</el-menu-item>
-          <el-menu-item index="3-2">选项3-2</el-menu-item>
-          <el-menu-item index="3-3">选项3-3</el-menu-item>
-        </el-submenu>
+
+        <el-menu-item index="3">PROGRAMME</el-menu-item>
+<!--        <el-submenu index="3">-->
+<!--          <template slot="title">PROGRAMME</template>-->
+<!--          <el-menu-item index="3-1">选项3-1</el-menu-item>-->
+<!--          <el-menu-item index="3-2">选项3-2</el-menu-item>-->
+<!--          <el-menu-item index="3-3">选项3-3</el-menu-item>-->
+<!--        </el-submenu>-->
 
         <el-submenu index="4">
           <template slot="title">KEYNOTE SPEAKERS</template>
@@ -60,6 +62,7 @@ export default {
       const keyDict = {
         '1':this.getHome,
         '2':this.callForPapers,
+        '3':this.programme,
         '4-1':this.getKeynoteSpeakers,
         '7-1': this.getVenue,
 
@@ -79,6 +82,9 @@ export default {
     },
     callForPapers(){
       this.$router.push('/paper');
+    },
+    programme(){
+      this.$router.push('/programme')
     }
   },
   mounted(){

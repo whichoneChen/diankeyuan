@@ -12,7 +12,7 @@
           </div>
           <div class="quick-links">
             <div>
-              <a href="#" @click="$router.push('/')">Call for Papers</a>
+              <a href="#" @click="$router.push('/paper')">Call for Papers</a>
               <a v-for="quicklink in quickLinkData" :href="quicklink.link">
                 {{quicklink.text}}
               </a>

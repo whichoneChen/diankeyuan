@@ -240,7 +240,7 @@ export default {
 
     &>*{
       padding: 10px 10px 10px 10px;
-      height: 200px;
+      height: 230px;
       background: #EEEEEE;
       color: #666666;
 
