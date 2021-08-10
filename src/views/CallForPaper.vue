@@ -76,6 +76,7 @@
 
 <script>
 export default {
+// comment
   name: "CallForPaper",
   data(){
     return{
