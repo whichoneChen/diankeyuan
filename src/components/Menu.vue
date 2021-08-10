@@ -23,10 +23,12 @@
 <!--          <el-menu-item index="3-3">选项3-3</el-menu-item>-->
 <!--        </el-submenu>-->
 
-        <el-submenu index="4">
-          <template slot="title">KEYNOTE SPEAKERS</template>
-          <el-menu-item index="4-1">KEYNOTE SPEAKERS</el-menu-item>
-        </el-submenu>
+        <el-menu-item index="4">KEYNOTE SPEAKERS</el-menu-item>
+
+<!--        <el-submenu index="4">-->
+<!--          <template slot="title">KEYNOTE SPEAKERS</template>-->
+<!--          <el-menu-item index="4-1">KEYNOTE SPEAKERS</el-menu-item>-->
+<!--        </el-submenu>-->
 
         <el-submenu index="5">
           <template slot="title">COMMITTEES</template>
@@ -58,12 +60,11 @@ export default {
   name: "Menu",
   methods:{
     handleSelect(key,item){
-      console.log(key)
       const keyDict = {
         '1': this.getHome,
         '2': this.callForPapers,
         '3': this.programme,
-        '4-1':this.getKeynoteSpeakers,
+        '4':this.getKeynoteSpeakers,
         '7-1': this.getVenue,
         '7-2': this.accomodation,
         '7-3': this.contact,
