@@ -8,12 +8,11 @@
       >
         <el-menu-item index="1">HOME</el-menu-item>
 
-        <el-submenu index="2">
-          <template slot="title">CALL FOR PAPERS</template>
-          <el-menu-item index="2-1">选项2-1</el-menu-item>
-          <el-menu-item index="2-2">选项2-2</el-menu-item>
-          <el-menu-item index="2-3">选项2-3</el-menu-item>
-        </el-submenu>
+        <el-menu-item index="2">CALL FOR PAPERS</el-menu-item>
+<!--        <el-submenu index="2">-->
+<!--          <template slot="title">CALL FOR PAPERS</template>-->
+<!--          <el-menu-item index="2-1">CALL FOR PAPERS</el-menu-item>-->
+<!--        </el-submenu>-->
 
         <el-submenu index="3">
           <template slot="title">PROGRAMME</template>
@@ -60,6 +59,7 @@ export default {
       console.log(key)
       const keyDict = {
         '1':this.getHome,
+        '2':this.callForPapers,
         '4-1':this.getKeynoteSpeakers,
         '7-1': this.getVenue,
 
@@ -72,10 +72,13 @@ export default {
       this.$router.push('/venue');
     },
     getKeynoteSpeakers(){
-      this.$router.push('/keynote')
+      this.$router.push('/keynote');
     },
     getHome(){
-      this.$router.push('/')
+      this.$router.push('/');
+    },
+    callForPapers(){
+      this.$router.push('/paper');
     }
   },
   mounted(){
