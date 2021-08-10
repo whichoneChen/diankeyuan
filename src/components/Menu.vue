@@ -65,6 +65,7 @@ export default {
         '3':this.programme,
         '4-1':this.getKeynoteSpeakers,
         '7-1': this.getVenue,
+        '7-2': this.accomodation,
 
       }
       if(Object.keys(keyDict).includes(key)){
@@ -85,6 +86,9 @@ export default {
     },
     programme(){
       this.$router.push('/programme')
+    },
+    accomodation(){
+      this.$router.push('/accomodation')
     }
   },
   mounted(){

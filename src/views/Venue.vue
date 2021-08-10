@@ -79,7 +79,7 @@ export default {
 
 <style scoped lang="scss">
 .back-img{
-  background-image: url("../assets/images/venue/bcg1.png");
+  background-image: url("../assets/images/accomodation/bcg1.png");
   height: 250px;
   display: flex;
   justify-content: center;
