@@ -60,12 +60,13 @@ export default {
     handleSelect(key,item){
       console.log(key)
       const keyDict = {
-        '1':this.getHome,
-        '2':this.callForPapers,
-        '3':this.programme,
+        '1': this.getHome,
+        '2': this.callForPapers,
+        '3': this.programme,
         '4-1':this.getKeynoteSpeakers,
         '7-1': this.getVenue,
         '7-2': this.accomodation,
+        '7-3': this.contact,
 
       }
       if(Object.keys(keyDict).includes(key)){
@@ -85,10 +86,13 @@ export default {
       this.$router.push('/paper');
     },
     programme(){
-      this.$router.push('/programme')
+      this.$router.push('/programme');
     },
     accomodation(){
-      this.$router.push('/accomodation')
+      this.$router.push('/accomodation');
+    },
+    contact(){
+      this.$router.push('/contact');
     }
   },
   mounted(){
