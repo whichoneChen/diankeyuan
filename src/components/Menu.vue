@@ -37,12 +37,14 @@
           <el-menu-item index="5-3">ORGANIZING COMMITTEE</el-menu-item>
         </el-submenu>
 
-        <el-submenu index="6">
-          <template slot="title">REGISTRATION</template>
-          <el-menu-item index="6-1">选项6-1</el-menu-item>
-          <el-menu-item index="6-2">选项6-2</el-menu-item>
-          <el-menu-item index="6-3">选项6-3</el-menu-item>
-        </el-submenu>
+
+        <el-menu-item index="6">REGISTRATION</el-menu-item>
+<!--        <el-submenu index="6">-->
+<!--          <template slot="title">REGISTRATION</template>-->
+<!--          <el-menu-item index="6-1">选项6-1</el-menu-item>-->
+<!--          <el-menu-item index="6-2">选项6-2</el-menu-item>-->
+<!--          <el-menu-item index="6-3">选项6-3</el-menu-item>-->
+<!--        </el-submenu>-->
 
         <el-submenu index="7">
           <template slot="title">HOTEL/NANJING</template>
@@ -68,6 +70,7 @@ export default {
         '5-1':this.steering,
         '5-2':this.technical,
         '5-3':this.organizing,
+        '6':this.registration,
         '7-1': this.getVenue,
         '7-2': this.accomodation,
         '7-3': this.contact,
@@ -106,6 +109,9 @@ export default {
     },
     organizing(){
       this.$router.push('/organizingCommittee')
+    },
+    registration(){
+      this.$router.push('./registration')
     }
   },
   mounted(){
