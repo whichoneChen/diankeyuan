@@ -39,6 +39,21 @@ const routes = [
     path:'/contact',
     name: 'Contact',
     component: () => import('../views/Contact')
+  },
+  {
+    path: '/steeringCommittee',
+    name:'Steering',
+    component: () => import('../views/committes/Steering')
+  },
+  {
+    path: '/technicalCommittee',
+    name:'Technical',
+    component: () => import('../views/committes/Technical')
+  },
+  {
+    path: '/organizingCommittee',
+    name:'Organizing',
+    component: () => import('../views/committes/Organizing')
   }
 ]
 

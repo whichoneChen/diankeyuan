@@ -32,9 +32,9 @@
 
         <el-submenu index="5">
           <template slot="title">COMMITTEES</template>
-          <el-menu-item index="5-1">选项5-1</el-menu-item>
-          <el-menu-item index="5-2">选项5-2</el-menu-item>
-          <el-menu-item index="5-3">选项5-3</el-menu-item>
+          <el-menu-item index="5-1">STEERING COMMITTEE</el-menu-item>
+          <el-menu-item index="5-2">TECHNICAL COMMITTEE</el-menu-item>
+          <el-menu-item index="5-3">ORGANIZING COMMITTEE</el-menu-item>
         </el-submenu>
 
         <el-submenu index="6">
@@ -65,6 +65,9 @@ export default {
         '2': this.callForPapers,
         '3': this.programme,
         '4':this.getKeynoteSpeakers,
+        '5-1':this.steering,
+        '5-2':this.technical,
+        '5-3':this.organizing,
         '7-1': this.getVenue,
         '7-2': this.accomodation,
         '7-3': this.contact,
@@ -94,6 +97,15 @@ export default {
     },
     contact(){
       this.$router.push('/contact');
+    },
+    steering(){
+      this.$router.push('/steeringCommittee')
+    },
+    technical(){
+      this.$router.push('/technicalCommittee')
+    },
+    organizing(){
+      this.$router.push('/organizingCommittee')
     }
   },
   mounted(){

@@ -1,0 +1,35 @@
+.back-img{
+  background-image: url("../../assets/images/committe/bcg.png");
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-zone{
+  margin: 30px 200px;
+
+  .info-card{
+    height: 120px;
+    padding: 10px 3px;
+    margin: 20px 0;
+
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #999999;
+    line-height: 30px;
+
+    .title{
+      color: #11A3CA;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    a{
+      text-decoration: none;
+      color: #3F3CF3;
+    }
+
+  }
+}
